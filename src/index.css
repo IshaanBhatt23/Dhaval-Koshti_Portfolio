@@ -2,12 +2,52 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
-
+/* 🎨 Design System — Default (Light) + Dark Theme */
 @layer base {
   :root {
+    /* 🌞 Light Mode (Default) */
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+
+    --primary: 210 100% 50%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 240 5% 96%;
+    --secondary-foreground: 240 10% 3.9%;
+
+    --muted: 240 5% 96%;
+    --muted-foreground: 240 4% 46%;
+
+    --accent: 270 95% 65%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 240 5% 90%;
+    --input: 240 5% 90%;
+    --ring: 210 100% 50%;
+
+    --radius: 1rem;
+
+    --hero-gradient-start: 210 100% 60%;
+    --hero-gradient-end: 270 95% 65%;
+    --glass-bg: 0 0% 100%;
+    --glass-border: 240 5% 85%;
+    --section-bg: 0 0% 100%;
+    --section-bg-alt: 240 5% 97%;
+    --glow-primary: 210 100% 60%;
+    --glow-accent: 270 95% 65%;
+  }
+
+  /* 🌙 Dark Mode */
+  .dark {
     --background: 240 10% 3.9%;
     --foreground: 0 0% 98%;
 
@@ -38,7 +78,6 @@ All colors MUST be HSL.
 
     --radius: 1rem;
 
-    /* Modern dark theme tokens */
     --hero-gradient-start: 210 100% 60%;
     --hero-gradient-end: 270 95% 65%;
     --glass-bg: 240 10% 10%;
@@ -50,13 +89,14 @@ All colors MUST be HSL.
   }
 }
 
+/* 🌗 Base Styles + Transitions */
 @layer base {
   * {
     @apply border-border;
   }
 
   body {
-    @apply bg-background text-foreground antialiased;
+    @apply bg-background text-foreground antialiased transition-colors duration-300;
   }
 
   html {
@@ -64,6 +104,7 @@ All colors MUST be HSL.
   }
 }
 
+/* ✨ Utility Classes */
 @layer utilities {
   .section-padding {
     @apply px-4 py-12 sm:py-16 md:py-20 lg:py-24 xl:py-32;
