@@ -50,7 +50,7 @@ const Hero = () => {
             </div>
             
             <p className="text-base md:text-lg lg:text-xl text-muted-foreground leading-relaxed max-w-xl">
-              Result-driven professional with 1.5+ years of experience in IT Service Management, 
+              Result-driven professional with 2+ years of experience in IT Service Management, 
               specializing in business growth and strategic client relationships.
             </p>
 

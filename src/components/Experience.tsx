@@ -4,7 +4,7 @@ import { Briefcase, Calendar } from "lucide-react";
 const experiences = [
   {
     company: "Development Avenue Technology Pvt Ltd",
-    role: "Business Development Executive",
+    role: "Business Development Executive & Operations Manager",
     period: "Aug 2023 - Present",
     description: "New Business Development, Business Process improvement",
     current: true,

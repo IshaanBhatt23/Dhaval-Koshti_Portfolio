@@ -6,7 +6,7 @@ const education = [
     degree: "Master of Commerce",
     institution: "Gujarat University",
     year: "2025",
-    status: "In Progress",
+    status: "Completed",
   },
   {
     degree: "Bachelor of Commerce",
