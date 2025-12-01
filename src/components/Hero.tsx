@@ -120,7 +120,7 @@ const Hero = () => {
               <div className="absolute -bottom-4 md:-bottom-6 left-1/2 -translate-x-1/2 w-11/12 glass-card rounded-xl md:rounded-2xl p-3 md:p-4 glow-effect">
                 <div className="grid grid-cols-3 gap-2 md:gap-4 text-center">
                   <div>
-                    <p className="text-xl md:text-2xl font-bold gradient-text">1.5+</p>
+                    <p className="text-xl md:text-2xl font-bold gradient-text">5+</p>
                     <p className="text-[10px] md:text-xs text-muted-foreground">Years Exp</p>
                   </div>
                   <div>
